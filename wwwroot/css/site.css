@@ -1,28 +1,9 @@
 /*Write all of your CSS here*/
+/* Header */
 h1 {
     text-align: center;
 }
-#register {
-    display: inline-block;
-    height: 100%;
-    width: 49%;
-    vertical-align: top;  
-}
-#registerlables {
-    display: inline-block;
-    vertical-align: top;
-    position: relative; 
-    top: 5px;
-}
-#registerfields {
-    display: inline-block;
-}
-#login{
-    display: inline-block;
-    height: 100%;
-    width: 49%;
-    vertical-align: top;    
-}
+/* Outer Div for login AND Registration area */
 #loginarea {
     text-align: center;
     height: 500px;
@@ -30,12 +11,45 @@ h1 {
     margin: auto;
     vertical-align: top;
 }
+/* Div for registration area */
+#register {
+    display: inline-block;
+    height: 100%;
+    width: 49%;
+    vertical-align: top;  
+}
+/* Red errors on registration page */
+.registerformerrors {
+    font-size: .9em;
+    color: red;
+}
+/* Labels for registration page */
+#registerlables {
+    display: inline-block;
+    vertical-align: top;
+    position: relative; 
+    top: 5px;
+}
+/* Fields for registration page */
+#registerfields {
+    display: inline-block;
+}
+/* Div for login area only */
+
+#login{
+    display: inline-block;
+    height: 100%;
+    width: 49%;
+    vertical-align: top;    
+}
+/* Labels for login area */
 #loginlabels {
     display: inline-block;
     vertical-align: top;
     position: relative; 
     top: 5px;
 }
+/* fields for login area */
 #loginfields {
     display: inline-block;
 }
