@@ -1,1 +1,41 @@
 /*Write all of your CSS here*/
+h1 {
+    text-align: center;
+}
+#register {
+    display: inline-block;
+    height: 100%;
+    width: 49%;
+    vertical-align: top;  
+}
+#registerlables {
+    display: inline-block;
+    vertical-align: top;
+    position: relative; 
+    top: 5px;
+}
+#registerfields {
+    display: inline-block;
+}
+#login{
+    display: inline-block;
+    height: 100%;
+    width: 49%;
+    vertical-align: top;    
+}
+#loginarea {
+    text-align: center;
+    height: 500px;
+    width: 700px;
+    margin: auto;
+    vertical-align: top;
+}
+#loginlabels {
+    display: inline-block;
+    vertical-align: top;
+    position: relative; 
+    top: 5px;
+}
+#loginfields {
+    display: inline-block;
+}
