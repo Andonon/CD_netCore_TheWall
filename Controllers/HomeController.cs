@@ -39,10 +39,16 @@ namespace thewall.Controllers
             TryValidateModel(NewUser); 
 
             if(ModelState.IsValid){
+                var CurrUsers = DbConnector.Query("SELECT * FROM users");
+                foreach(var user in CurrUsers){
+                    Console.WriteLine(user[0]).ToString());
+                }
+
                 string query = $"INSERT INTO users (firstname, lastname, email, username, password, created_at, updated_at) VALUES ('{firstname}', '{lastname}', '{email}', '{username}', '{password}', NOW(), NOW());";
                 DbConnector.Execute(query);
 
 
+                
 
             // // DB Query to get user id. and name
             // Sace to Session. 
